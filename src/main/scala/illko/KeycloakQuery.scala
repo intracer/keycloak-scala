@@ -1,7 +1,7 @@
 package illko
 
 import org.keycloak.admin.client.Keycloak
-import org.keycloak.admin.client.resource.{ClientsResource, RealmResource, UsersResource}
+import org.keycloak.admin.client.resource.{RealmResource, UsersResource}
 import org.keycloak.representations.idm.UserRepresentation
 
 import scala.collection.JavaConverters._

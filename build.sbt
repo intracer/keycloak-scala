@@ -7,10 +7,14 @@ scalaVersion := "2.12.8"
 //resolvers += "JBoss" at "https://repository.jboss.org"
 resolvers += Resolver.mavenLocal
 
+val SpecsV = "4.2.0"
+
 libraryDependencies ++= Seq(
   "org.keycloak" % "keycloak-admin-client" % "4.8.1.Final",
   "org.jboss.resteasy" % "resteasy-client" % "3.6.1.Final",
-  "org.jboss.resteasy" % "resteasy-jackson2-provider" % "3.6.1.Final"
+  "org.jboss.resteasy" % "resteasy-jackson2-provider" % "3.6.1.Final",
+
+  "org.specs2" %% "specs2-core" % SpecsV % Test
 )
 
 dependencyOverrides ++= Seq(
@@ -30,6 +34,6 @@ dependencyOverrides ++= Seq(
   "org.jboss.logging" % "jboss-logging-processor" % "2.1.0.Final",
 
   "com.fasterxml.jackson.jaxrs" % "jackson-jaxrs-json-provider" % "2.9.5",
-  "com.github.fge" % "json-patch" % "1.3",   
+  "com.github.fge" % "json-patch" % "1.3",
   "junit" % "junit" % "4.12"
 )
